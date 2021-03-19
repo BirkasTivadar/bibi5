@@ -52,7 +52,7 @@ public class BankTransaction {
     }
 
     public static long averageOfTransaction() {
-        return sumOfTrxs / numberOfTrx;
+        return numberOfTrx == 0 ? 0 : sumOfTrxs / numberOfTrx;
     }
 
     private void checkCurrentMaxValue(long trxValue) {
